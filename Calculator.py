@@ -1,6 +1,7 @@
 # Sample Calculator 
 
 # Program make a simple calculator
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -13,6 +14,15 @@ def add(x, y):
 # This function subtracts two numbers
 def subtract(x, y):
     return x - y
+=======
+# This function multiplies two numbers
+def multiply(x, y):
+    return x * y
+
+# This function divides two numbers
+def divide(x, y):
+    return x / y
+>>>>>>> Feature-2
 
 >>>>>>> Release-1
 
@@ -35,9 +45,32 @@ print("4.Divide")
 =======
         num2 = float(input("Enter second number: "))
 
+<<<<<<< HEAD
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
 
+<<<<<<< HEAD
         else choice == '2':
             print(num1, "-", num2, "=", subtract(num1, num2))
 >>>>>>> Release-1
+=======
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+=======
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        else choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        
+        # check if user wants another calculation
+        # break the while loop if answer is no
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        if next_calculation == "no":
+          break
+    
+    else:
+        print("Invalid Input")
+>>>>>>> Feature-2
+>>>>>>> Release-2
