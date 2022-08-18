@@ -8,4 +8,4 @@ COPY Calculator.py ./
 
 # no requirements to be added
 
-CMD ["echo", "Running Docker Container"]
+CMD ["python", "Calculator.py"]
